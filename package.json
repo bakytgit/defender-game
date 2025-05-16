@@ -4,6 +4,7 @@
   "description": "\"Browser based game\"",
   "main": "index.js",
   "scripts": {
+	"build": "babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/bakytgit/defender-game/issues"
   },
-  "homepage": "https://github.com/bakytgit/defender-game#readme"
+  "homepage": "https://github.com/bakytgit/defender-game#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "core-js": "^3.42.0"
+  }
 }
