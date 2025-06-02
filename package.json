@@ -1,15 +1,12 @@
 {
   "name": "defender-game",
   "version": "1.0.0",
-  "description": "\"Browser based game\"",
+  "description": "Browser based game",
   "main": "index.js",
   "scripts": {
-	"build": "babel src -d dist",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bakytgit/defender-game.git"
   },
   "keywords": [
     "game"
@@ -20,10 +17,17 @@
     "url": "https://github.com/bakytgit/defender-game/issues"
   },
   "homepage": "https://github.com/bakytgit/defender-game#readme",
-  "devDependencies": {
+ "devDependencies": {
     "@babel/cli": "^7.27.2",
     "@babel/core": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
-    "core-js": "^3.42.0"
+    "babel-loader": "^8.0.0",
+    "core-js": "^3.42.0",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
